@@ -97,6 +97,7 @@ public class MyLinkedList {
     /**
      * Delete the index-th node in the linked list, if the index is valid.
      */
+
     public void deleteAtIndex(int index) {
         if (index < 0 || index >= numberOfNodes)
             return;
