@@ -13,7 +13,7 @@ public class CustomThreadPool {
         workerQueue = new LinkedBlockingQueue<>();
         workerThreads = new Thread[capacity];
         for (int i = 0; i < workerThreads.length; i++) {
-            Thread thread = new Worker(" WorkerThread " + i);
+            Thread thread = new Worker(" WorkerThread: " + i);
             thread.start();
         }
     }
