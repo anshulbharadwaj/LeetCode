@@ -35,6 +35,8 @@ public class CustomThreadPool {
         public void run() {
             while (true) {
                 try {
+                    String threadName = Thread.currentThread().getName();
+                    System.out.println(threadName);
                     workerQueue.take().run();
                 } catch (InterruptedException interruptedException) {
                     interruptedException.printStackTrace();
