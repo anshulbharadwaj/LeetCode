@@ -1,4 +1,4 @@
-# Coding Problems
-Implementation of Data Structures, Algorithms, Coding Interview problems and their respective solution.
+# LeetCode
+Collection of LeetCode questions to ace the coding interview!
 
 
