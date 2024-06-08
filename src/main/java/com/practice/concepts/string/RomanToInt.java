@@ -3,7 +3,7 @@ package com.practice.concepts.string;
 public class RomanToInt {
 
     public static int romanToInt(String s) {
-        int res = 0;
+        int result = 0;
         int len = s.length();
         char[] arr = s.toCharArray();
         for (int i = 0; i < len - 1; i++) { // till second last character
@@ -11,15 +11,15 @@ public class RomanToInt {
             int nextValue = getValue(s.charAt(i + 1));
 
             if (currentValue < nextValue) {
-                res = res - currentValue; // for cases like "IV", "IX"
+                result = result - currentValue; // for cases like "IV", "IX"
             } else {
-                res = res + currentValue; // for normal case like 'C', 'D', 'I'
+                result = result + currentValue; // for normal case like 'C', 'D', 'I'
             }
         }
 
         int lastCharacterValue = getValue(s.charAt(len - 1)); // add last char also
 
-        return res + lastCharacterValue;
+        return result + lastCharacterValue;
 
     }
 
